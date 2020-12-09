@@ -1,0 +1,57 @@
+nav {
+  font-family: "Comic Sans MS";
+  font-size: 3em;
+  background-color: gray;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+a:active {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  color: red;
+}
+a:link {
+  text-decoration-line: none;
+}
+p{  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+  background-color: gray;
+  color: black;
+  padding: 10px;
+  font-size: 3em;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}

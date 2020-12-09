@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exempel 7</title>
+</head>
+<body>
+
+    <h1>JS - Exempel 7</h1>
+
+    <h2>Att arbeta med Funktioner</h2>
+
+
+    <script>
+        
+        // En parameterlös funktion
+        function hej () {
+            console.log("Hello World!");
+        }
+
+        hej();
+
+        // En funktion med en parameter
+
+        function print(message) {
+            console.log(message)
+        }
+
+        print("hello world!");
+        print();
+
+        // En funktion med 2 parametrar
+
+        function add(num1, num2) {
+            console.log(num1 + num2);
+        }
+
+
+        add(1,2);
+
+        function test(...param){
+
+            console.log(param);
+        }
+        test(1)
+        test(1, "test")
+        test(1, "test", 2.5);
+
+        // En funktion med returvärde
+        function fullName(firstName, lastName){
+            return firstName + " " + lastName;
+        }
+
+        let name = fullName("Marcus,Ljungqvist");
+        console.log(name);
+        
+        //Default parameter
+        function echo(message = "hello"){
+            console.log(message);
+        }
+
+        echo();
+    </script>
+    
+</body>
+</html>

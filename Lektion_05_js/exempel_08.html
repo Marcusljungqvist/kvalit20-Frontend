@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exempel 1</title>
+</head>
+<body>
+
+    <h1>JS - Exempel 8</h1>
+
+    <h2>Att arbeta med villkor (if-else)</h2>
+
+    <h3 id="resultat">resultat: </h3>
+
+
+    <script>
+        
+
+        let score = prompt("Ange poäng");
+
+        if(score >= 50){
+            congratulate();
+        }
+        else{
+            encourage();
+        }
+        
+
+
+        function encourage(){
+            let message = "Tyvärr du har fått IG.<br>Lycka till nästa gång!";
+            console.log(message);
+            document.getElementById("resultat").innerHTML += message;
+        }
+
+
+        function congratulate(){
+            let message = "Congratulations!";
+            console.log(message);
+            document.getElementById("resultat").innerHTML += message;
+        }
+    </script>
+    
+</body>
+</html>

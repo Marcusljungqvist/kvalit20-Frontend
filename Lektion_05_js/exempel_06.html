@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Exempel 6</title>
+
+</head>
+<body>
+
+    <h1>JS - Exempel 1</h1>
+
+    <h2>Att arbeta med prompt</h2>
+
+    <h3 id="hello"></h3>
+    <h3 id="resultat"></h3>
+
+    <script>
+
+       let name = prompt("Vad heter du?");
+
+       hello.innerHTML = "hello " + name;
+
+       //document.getElementById("hello").innerHTML = "Hello " + name + "!";
+
+
+        //Prompt returnerar allting en sträng
+       let num1 = prompt("Ange tal 1");
+       let num2 = prompt("Ange tal 2");
+       console.log (num1 + num2);
+
+       //Vi måste konvertera till tal
+       console.log(Number(num1) + Number(num2));
+
+       let resultat = document.getElementById("resultat");
+       resultat.innerHTML = Number(num1) + Number(num2);
+
+
+
+        //bör undvikas
+       //resultat.innerHTML = (Number(num1) + Number(num2));
+
+
+
+
+
+
+    
+
+    </script>
+    
+</body>
+</html>
