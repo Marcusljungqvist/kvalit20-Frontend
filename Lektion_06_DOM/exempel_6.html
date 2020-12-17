@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exempel 4</h1>
+
+    <h2>Events</h2>
+
+    <h3>Demo på onclick som anropar en JS-funktion</h3>
+
+    <button onclick="hello()">
+        Klicka här för att anropa en funktion
+    </button>
+
+    <button onclick="clearDemo()">
+        Klicka här för att ta bort texten
+    </button>
+
+    <p id="demo">
+
+    </p>
+    
+    <script>
+
+        function hello() {
+            let p = document.getElementById('demo');
+            p.innerHTML = "hej på dig";
+        }
+
+        function clearDemo() {
+            let p = document.getElementById('demo');
+            p.innerHTML = "";
+        }
+
+    </script>
+
+</body>
+</html>
