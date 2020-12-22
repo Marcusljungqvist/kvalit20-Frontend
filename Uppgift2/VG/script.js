@@ -86,14 +86,14 @@ let nyaHändelsenTextElement = document.querySelector("[nyaHändelsen]")
 let calculator = new Calculator(förraHändelsenTextElement, nyaHändelsenTextElement)
 
 numberButtons.forEach(knapp => {
-    knapp.addEventListener("click", (e) => {
+    knapp.addEventListener("click", () => {
         calculator.sättVärde(knapp.innerText)
         calculator.updateDisplay()
     })
 })
 
 operationButtons.forEach(knapp => {
-    knapp.addEventListener("click", (e) => {
+    knapp.addEventListener("click", () => {
         calculator.chooseOperation(knapp.innerText)
         calculator.updateDisplay()
     })
@@ -114,4 +114,3 @@ deleteButton.addEventListener("click", knapp =>{
     calculator.updateDisplay()
 })
 
-    
